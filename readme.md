@@ -21,8 +21,8 @@ https://velog.io/@delilah/GitHub-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D
 <저장소 복제/다운로드(clone)>	*$ git clone <https:.. URL>	기존 소스 코드 다운로드/복제
 
 
-*$ git clone /로컬/저장소/경로	로컬 저장소 복제
-*$ git clone 사용자명@호스트:/원격/저장소/경로	원격 서버 저장소 복제
+* $ git clone /로컬/저장소/경로	로컬 저장소 복제
+* $ git clone 사용자명@호스트:/원격/저장소/경로	원격 서버 저장소 복제
 <추가 및 확정(commit)>	*$ git add <파일명>
 *$ git add *	커밋에 단일 파일의 변경 사항을 포함
 (인덱스에 추가된 상태)
