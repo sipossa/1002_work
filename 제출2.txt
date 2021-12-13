@@ -1,0 +1,37 @@
+attribute
+property
+
+선택자 {속성:속성값;	속성2:속성값;}
+
+* {} 모든 테그
+
+
+tag 
+id - 한 html 파일에 1개의 이름만  #id
+class - 한 html 파일에 여러개 .class
+
+a b  {} a의 후손 b
+a>b {} a의 자식 b
+
+a+b {}
+a~b {}
+
+가상요소
+a:before {content:"";}
+a:after {content:"";}
+
+a:hover {} //css 유일한 이벤트 (마우스가 올내)
+마진 겹칩현상.
+
+
+
+
+
+
+건설회사 금요일 2시 까지 제출.
+
+
+
+
+
+

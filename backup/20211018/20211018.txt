@@ -1,0 +1,11 @@
+javascript 
+jquery -- 쉽게 자바스크립트를 쓰는 라이버러리
+slick owl bx -- 제이쿼리를 기반으로한 플러그인
+
+1. 파일가져오기
+2. html 구조 만들기
+3. javascript 적용하기
+
+ctr + shift + r  ---> 캐쉬 리로드
+
+

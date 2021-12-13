@@ -1,0 +1,11 @@
+경로 
+1. 절대경로 http://naver.com/movie
+2. 상대경로 
+1) / (root--최상단)
+2) ./ (나와 같은 형제 레벨 - 생략가능)
+3) ../ (부모 레벨) 
+
+css 적용 효율적으로 하기
+1) 인라인 stylesheet  tag line : style="" - javascript 가 작동하는 원리
+2) 내부 stylesheet 
+3) 외부 stylesheet - 가장 효율적인 방법
