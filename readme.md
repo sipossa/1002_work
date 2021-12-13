@@ -9,12 +9,12 @@ https://velog.io/@delilah/GitHub-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D
 
 1. git 명령어 모음
 
-**Git 설치 (for ubuntu)
+### Git 설치 (for ubuntu)
 1) 터미널 (ctrl + Alt + T)
 2) sudo apt install git 입력 (=> 설치완료)
 3) git --version 입력 (=> 설치 확인 및 버전 확인)
 
-1-1. GIT 명령어
+### 1-1. GIT 명령어
 분류	명령어	내용 설명
 <새로운 저장소 생성>	
 * $ git init	.git 하위 디렉토리 생성
@@ -62,7 +62,7 @@ https://velog.io/@delilah/GitHub-Git-%EB%AA%85%EB%A0%B9%EC%96%B4-%EB%AA%A8%EC%9D
 * $ git checkout -- <파일명>	로컬의 변경 사항을 변경 전으로 되돌림
 * $ git fetch origin	원격에 저장된 git프로젝트의 현 상태를 다운로드
 
-1-2. CLI (Command Line Interface) 명령어
+### 1-2. CLI (Command Line Interface) 명령어
 명령어 인터페이스는 (마우스나 각종 UI 컴포넌트 대신) 터미널을 통해 사용자와 컴퓨터가 상호 작용하는 방식
 분류	명령어	의미	설명
 <관리자 권한으로 실행>	
