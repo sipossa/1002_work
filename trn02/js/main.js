@@ -13,6 +13,22 @@ $(function(){
         },
     });
 
+    $('.b_slider').slick({
+        arrows:false,
+        asNavFor:'.b_slider',
+        autoplay:true,
+    });
+
+    $('.brand_name li').on('click', function(){
+        $(this).addClass('on').siblings().removeClass('on');
+        let idx=$(this).index();
+        $('.b_slider').slick('slickGoTo',idx);
+    });
+
+    $('.b_slider').on('afterChange', function(e,s,c){
+        $('.brand_name li').eq(c).addClass('on').siblings().removeClass('on');
+    })
+
 
 
     
