@@ -29,7 +29,26 @@ $(function(){
         $('.brand_name li').eq(c).addClass('on').siblings().removeClass('on');
     })
 
+    
 
+    $('.header>a').on('click', function(){
+        $(this).toggleClass('on');
+        $('.all_menu').slideToggle();
+        if($('.header>a').hasClass('on')) {
+            $.fn.fullpage.setAllowScrolling(false);
+        }else{
+            $.fn.fullpage.setAllowScrolling(true);
+        }
+    });
+
+
+    $('.all_menu a').on('click', function(){
+        $('.all_menu').slideUp();
+        $.fn.fullpage.setAllowScrolling(true);
+        $('.header>a').removeClass('on');
+    });
+
+    
 
     
 //-------------------------------------------------------
