@@ -22,6 +22,8 @@
         .main_slider .itm01 {background:url(../lib/base/main_visual01.jpg) no-repeat center center/cover;}
         .main_slider .itm02 {background:url(../lib/base/main_visual02.jpg) no-repeat center center/cover;}
         .main_slider .itm03 {background:url(../lib/base/main_visual03.jpg) no-repeat center center/cover;}
+
+        .section {height:500vh;}
     </style>
 </head>
 <body>
@@ -50,6 +52,11 @@
             </div>
         </div>       
     </section>
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
+    <section class="section"></section>
 
 <script>
 
@@ -62,16 +69,12 @@ const mainSlider = new Swiper('.main_slider', {
     autoplay:{
         delay:2000,
     },
-    coverflowEffect: {
-          rotate: 200,
-          stretch: 100,
-          depth: 300,
-          modifier: 2,
-          slideShadows: true,
-        },
+
     
 });
 
+
+//swiper addClass on
 const sItm = document.querySelectorAll('.swiper-slide');
 // $('.swiper-slide');
 const itm = document.querySelector('.swiper-slide-active');
@@ -82,7 +85,26 @@ mainSlider.on('slideChangeTransitionEnd',()=>{
 });
 mainSlider.on('slideChangeTransitionStart', ()=>{
     sItm.forEach(e=>e.classList.remove('on'));
-})
+});
+
+//scroll event
+const sec = document.querySelectorAll('.section');
+window.addEventListener("scroll", ()=>{
+        let sct=window.scrollY;
+        //window의 높이의 1/2 구해서 뺴주기
+        console.log(sct);
+        sec.forEach((e,idx)=>{
+            let itmTop = sec[idx].offsetTop;
+            itmTop > sct ? e.classList.remove('on') : sec[idx].classList.add('on')
+            //e.classList.add('on');
+            console.log(itmTop)
+        });
+
+        //$(".section").each(function(){
+            //let this_top=$(this).offset().top;
+            //sct>this_top-400 ? $(this).addClass("on") : $(this).removeClass("on");
+        //})
+    });
 </script>
 </body>
 </html>
