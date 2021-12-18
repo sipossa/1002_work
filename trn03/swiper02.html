@@ -88,22 +88,17 @@ mainSlider.on('slideChangeTransitionStart', ()=>{
 });
 
 //scroll event
-const sec = document.querySelectorAll('.section');
+const SEC = document.querySelectorAll('.section');
+const WT=window.innerHeight;
+
 window.addEventListener("scroll", ()=>{
         let sct=window.scrollY;
-
-        console.log(sct);
-        sec.forEach((e,idx)=>{
-            let itmTop = sec[idx].offsetTop;
-            itmTop > sct ? e.classList.remove('on') : sec[idx].classList.add('on')
-            //e.classList.add('on');
-            console.log(itmTop)
+        SEC.forEach((e)=>{
+            let secTop = e.offsetTop;
+            let secH=e.clientHeight;
+            sct > secTop -(WT-secH)/2 ? e.classList.add('on') : e.classList.remove('on');
         });
 
-        //$(".section").each(function(){
-            //let this_top=$(this).offset().top;
-            //sct>this_top-400 ? $(this).addClass("on") : $(this).removeClass("on");
-        //})
 });
 </script>
 </body>
