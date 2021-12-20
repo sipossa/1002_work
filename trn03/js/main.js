@@ -5,6 +5,12 @@ window.addEventListener('scroll', ()=>{
     sct>0 ? HD.classList.add('on') : HD.classList.remove('on')
 });
 
+const totopBtn=document.querySelector('#totop');
+
+totopBtn.addEventListener('click', ()=>{
+    window.scrollTo({top:0, behavior:'smooth'})
+})
+
 
 const mainSlier = new Swiper('.main_slider', {
     loop:true,
