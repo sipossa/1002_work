@@ -10,7 +10,6 @@ window.addEventListener('load', function(){
                 let secH=e.clientHeight;
                 sct > secTop -(WT-secH)/2 ? e.classList.add('on') : e.classList.remove('on');
             });
-
     });
 
 
