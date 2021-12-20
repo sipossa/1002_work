@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab01</title>
+    <style>
+        .ham_content .title {background:#f00;color:#fff;}
+        .ham_content .content {height:0;overflow:hidden;transition:0.5s;} 
+        .ham_content .title.on + .content{height:100px;} 
+    </style>
+</head>
+<body>
+    <div class="ham_content">
+        <div class="itm">
+            <div class="title"><a href="01">01</a></div>
+            <div class="content">content01</div>
+        </div>
+        <div class="itm">
+            <div class="title"><a href="01">02</a></div>
+            <div class="content">content02</div>
+        </div>
+        <div class="itm">
+            <div class="title"><a href="01">03</a></div>
+            <div class="content">content03</div>
+        </div>
+    </div>
+    <script>
+        const hamLink = document.querySelectorAll('.ham_content .title')
+        const hamItm = document.querySelectorAll('.ham_content .content')
+        hamLink.forEach((el,idx)=>{
+            el.addEventListener('click', e=>{
+                e.preventDefault();
+                hamLink.forEach(e=>e.classList.remove('on'))
+                e.currentTarget.classList.add('on');
+            })
+        })
+    </script>
+</body>
+</html>

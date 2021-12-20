@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tab01</title>
+    <style>
+        .tab_link li.on {background:#f00;color:#fff;}
+        .tab_content>div {display:none;} 
+        .tab_content>div.on {display:block;} 
+    </style>
+</head>
+<body>
+    <ul class="tab_link">
+        <li class="on"><a href="#">menu01</a></li>
+        <li><a href="#">menu02</a></li>
+        <li><a href="#">menu03</a></li>
+    </ul>
+    <div class="tab_content">
+        <div class="itm on">con01</div>
+        <div class="itm">con02</div>
+        <div class="itm">con03</div>
+    </div>
+    <script>
+        const tabLink = document.querySelectorAll('.tab_link>li')
+        const tabItm = document.querySelectorAll('.tab_content .itm')
+        tabLink.forEach((el,idx)=>{
+            el.addEventListener('click', e=>{
+                e.preventDefault();
+                tabLink.forEach(e=>e.classList.remove('on'))
+                e.currentTarget.classList.add('on');
+                tabItm.forEach(e=>e.classList.remove('on'))
+                tabItm[idx].classList.add('on');
+            })
+        })
+    </script>
+</body>
+</html>
