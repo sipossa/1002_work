@@ -5,13 +5,26 @@ window.addEventListener('scroll', ()=>{
     sct>0 ? HD.classList.add('on') : HD.classList.remove('on')
 });
 
+//scroll event
+const SEC = document.querySelectorAll('.action');
+const WT=window.innerHeight;
+
+window.addEventListener("scroll", ()=>{
+        let sct=window.scrollY;
+        SEC.forEach(e=>{
+            let secTop = e.offsetTop;
+            let secH=e.clientHeight;
+            sct > secTop -(WT-secH)/2 -200 ? e.classList.add('on') : e.classList.remove('on');
+        });
+});
+
 const totopBtn=document.querySelector('#totop');
 
-totopBtn.addEventListener('click', ()=>{
-    window.scrollTo({top:0, behavior:'smooth'})
-})
+// totopBtn.addEventListener('click', ()=>{
+//     window.scrollTo({top:0, behavior:'smooth'})
+// })
 
-
+const SLIDEBAR = document.querySelector('.slide_bottom .bar');
 const mainSlier = new Swiper('.main_slider', {
     loop:true,
     slidesPerView: 2,
@@ -30,3 +43,52 @@ const mainSlier = new Swiper('.main_slider', {
     autoplayDisableOnInteraction:false,
 
 });
+
+SLIDEBAR.classList.add('on');
+mainSlier.on('slideChangeTransitionEnd', ()=>{
+    SLIDEBAR.classList.add('on')
+});
+mainSlier.on('slideChangeTransitionStart', ()=>{
+    SLIDEBAR.classList.remove('on')
+});
+
+
+const productSlier = new Swiper('.pr_slider', {
+    loop:true,
+    slidesPerView: 4,
+    spaceBetween: 30,
+    pagination: {
+        el: '.pr_btn .page',
+        //type: "fraction",
+    },
+    navigation: {
+        nextEl: '.pr_btn .btn_next',
+        prevEl: '.pr_btn .btn_prev',
+    },
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
