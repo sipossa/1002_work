@@ -57,6 +57,7 @@ const productSlier = new Swiper('.pr_slider', {
     loop:true,
     slidesPerView: 4,
     spaceBetween: 30,
+
     pagination: {
         el: '.pr_btn .page',
         //type: "fraction",
@@ -67,6 +68,41 @@ const productSlier = new Swiper('.pr_slider', {
     },
 });
 
+
+const productSlier02 = new Swiper('.pr2_slider', {
+    loop:true,
+    slidesPerView: 2,
+    spaceBetween: 120,
+    pagination: {
+        el: '.pr_btn .page',
+        //type: "fraction",
+    },
+    navigation: {
+        nextEl: '.pr_btn .btn_next',
+        prevEl: '.pr_btn .btn_prev',
+    },
+});
+
+const productSlier03 = new Swiper('.pr3_slider', {
+    loop:true,
+    navigation: {
+        nextEl: '.pr_btn .btn_next',
+        prevEl: '.pr_btn .btn_prev',
+    },
+});
+
+//swiper addClass on
+const sItm = document.querySelectorAll('.sc04 .swiper-slide');
+// $('.swiper-slide');
+const itm = document.querySelector('.sc04 .swiper-slide-active');
+itm.classList.add('on');
+productSlier02.on('slideChangeTransitionEnd',()=>{
+    const itm = document.querySelector('.sc04 .swiper-slide-active');
+    itm.classList.add('on');
+});
+productSlier02.on('slideChangeTransitionStart', ()=>{
+    sItm.forEach(e=>e.classList.remove('on'));
+});
 
 
 

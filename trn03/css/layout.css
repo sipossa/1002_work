@@ -85,6 +85,7 @@ body {font-size:1.6rem;}
 .content h2 {font-size:3.1rem;font-family: 'Noto Serif KR', serif;margin-bottom:2rem;}
 .content p {font-size:1.7rem;margin-bottom:4rem;color:#888;}
 .content .container {width:130rem;margin:0 auto;padding:0 1rem;}
+.content .container-fluid {width:auto;}
 
 .content img {width:100%;}
 .content .txt {text-align:center;background:#fff;padding:4rem 2rem 4rem 2rem;}
@@ -125,3 +126,56 @@ body {font-size:1.6rem;}
 .sc03.on h2 {opacity:1;transform:translate(0,0);transition:0.5s;}
 .sc03.on p {opacity:1;transform:translate(0,0);transition:0.5s;}
 .sc03.on .pr_slider {padding:1rem 0;opacity:1;transform:translate(0,0);transition:0.5s 0.5s;}
+
+
+.sc04 {background:#f8f8f8;position:relative;}
+
+.sc04 .container-fluid {display:flex;}
+.sc04 .container-fluid>div {flex:1;}
+.sc04 .left {display:flex;justify-content:flex-end;align-items:center;}
+.sc04 .tit {width:65rem;}
+.sc04 .tit h2 {line-height:1.4;}
+
+.sc04 .g_btn:after {background:var(--mc);color:#fff;}
+
+.sc04 .right {width:50%;}
+.sc04 .right .pr2_slider {width:140%;}
+
+.sc04 .wave {position:absolute;top:23rem;left:0;width:15rem;height:8rem;background-image:url(../img/des_obj.png);background-repeat: repeat-x;background-position-x:0;animation:wave 10s infinite linear;}
+
+@keyframes wave {
+    to {background-position-x:100%;}
+}
+
+.sc04 figure {position:relative;padding-bottom:10rem;}
+.sc04 figure .set {position:absolute;bottom:0;right:-8rem;width:42rem;opacity:0;}
+.sc04 figure.on .set {opacity:1;transition:0.5s;}
+
+.sc04 figure .original {filter:grayscale(0.7);}
+.sc04 figure.on .original {filter:grayscale(0);transition:0.5s;}
+
+.sc05 {padding:0 0;position:relative;}
+.sc05 img {width:100%;}
+.sc05 .container-fluid {display:flex;}
+.sc05 .container-fluid>div {flex:1;}
+.sc05 .right {display:flex;justify-content:flex-start;align-items:center;padding:0 0 0 8rem}
+.sc05 .tit {width:65rem;}
+.sc05 .tit h2 {line-height:1.4;}
+
+.sc05 .g_btn:after {background:var(--mc);color:#fff;}
+
+.sc05 .left {width:50%;}
+
+.sc05 .pr_btn i {position:absolute;bottom:0;left:50%;transform:translateX(-50%);z-index:999;background:var(--mc);color:#fff;font-size:3rem;padding:1rem;}
+
+.sc05 .pr_btn i.xi-arrow-left {margin-left:-2.5rem;background:#fff;color:var(--mc);}
+.sc05 .pr_btn i.xi-arrow-right {margin-left:2.5rem;}
+
+.sc06 {background:url(../img/main_bg03.jpg) no-repeat center center/cover;}
+
+
+
+
+
+
+
