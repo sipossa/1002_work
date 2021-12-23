@@ -134,7 +134,17 @@ body {font-size:1.6rem;}
 .sc04 .container-fluid>div {flex:1;}
 .sc04 .left {display:flex;justify-content:flex-end;align-items:center;}
 .sc04 .tit {width:65rem;}
-.sc04 .tit h2 {line-height:1.4;}
+
+.sc04 .tit h2 {line-height:1.4;transform:translateY(10rem);opacity:0;transition:0.5s;}
+.sc04 .tit p {transform:translateY(10rem);opacity:0;transition:0.5s;}
+.sc04 .tit a {display:block;transform:translateY(10rem);opacity:0;transition:0.5s;}
+
+.sc04.on .tit h2 {line-height:1.4;transform:translateY(0);opacity:1;transition:0.5s;}
+.sc04.on .tit p {transform:translateY(0);opacity:1;transition:0.5s 0.5s;}
+.sc04.on .tit a {transform:translateY(0);opacity:1;transition:0.5s 1s;}
+
+.sc04 .pr2_slider {transform:translateX(30rem);opacity:0;transition:0.5s;}
+.sc04.on .pr2_slider {transform:translateX(0);opacity:1;transition:0.5s 1.5s;}
 
 .sc04 .g_btn:after {background:var(--mc);color:#fff;}
 
@@ -154,13 +164,26 @@ body {font-size:1.6rem;}
 .sc04 figure .original {filter:grayscale(0.7);}
 .sc04 figure.on .original {filter:grayscale(0);transition:0.5s;}
 
+
+
+
 .sc05 {padding:0 0;position:relative;}
 .sc05 img {width:100%;}
 .sc05 .container-fluid {display:flex;}
 .sc05 .container-fluid>div {flex:1;}
 .sc05 .right {display:flex;justify-content:flex-start;align-items:center;padding:0 0 0 8rem}
 .sc05 .tit {width:65rem;}
-.sc05 .tit h2 {line-height:1.4;}
+.sc05 .tit h2 {line-height:1.4;transform:translateY(10rem);opacity:0;transition:0.5s;}
+.sc05 .tit p {transform:translateY(10rem);opacity:0;transition:0.5s;}
+.sc05 .tit a {display:block;transform:translateY(10rem);opacity:0;transition:0.5s;}
+
+.sc05.on .tit h2 {line-height:1.4;transform:translateY(0);opacity:1;transition:0.5s;}
+.sc05.on .tit p {transform:translateY(0);opacity:1;transition:0.5s 0.5s;}
+.sc05.on .tit a {transform:translateY(0);opacity:1;transition:0.5s 1s;}
+
+
+.sc05 .pr3_slider {transform:translateX(-30rem);opacity:0;transition:0.5s;}
+.sc05.on .pr3_slider {transform:translateX(0);opacity:1;transition:0.5s 1.5s;}
 
 .sc05 .g_btn:after {background:var(--mc);color:#fff;}
 
@@ -171,7 +194,49 @@ body {font-size:1.6rem;}
 .sc05 .pr_btn i.xi-arrow-left {margin-left:-2.5rem;background:#fff;color:var(--mc);}
 .sc05 .pr_btn i.xi-arrow-right {margin-left:2.5rem;}
 
-.sc06 {background:url(../img/main_bg03.jpg) no-repeat center center/cover;}
+.sc06 {background:url(../img/main_bg03.jpg) no-repeat center center/cover;color:#fff;}
+
+.sc06 .container {display:flex;align-items:center;}
+.sc06 .container .left {flex:3;border-right:1px solid rgba(225,255,255,0.5);transform:translateX(-20rem);opacity:0;transition:0.5s;}
+.sc06 .container .center {flex:4;transform:translateY(10rem);opacity:0;transition:0.5s;}
+.sc06 .container .right {flex:6;transform:translateX(20rem);opacity:0;transition:0.5s;}
+
+.sc06.on .container .left {transform:translateX(0);opacity:1;transition:0.5s;}
+.sc06.on .container .center {transform:translateY(0);opacity:1;transition:0.5s 0.5s;}
+.sc06.on .container .right {transform:translateX(0);opacity:1;transition:0.5s 1s;}
+
+.sc06 .container .left strong {display:block;width:10rem;background:#333;padding:0.5rem 0 0.7rem 0;text-align:center;margin-bottom:2rem;}
+.sc06 .container .left h3 {font-size:2.5rem;font-weight:300;margin-bottom:4rem;line-height:1.4;}
+.sc06 .container .date {font-size:1.3rem;font-weight:300;letter-spacing:0.08em;}
+.sc06 .container .latest {padding:3rem 0 3rem 3rem;}
+.sc06 .container .latest span {margin-right:2rem;color:#ddd;font-size:1.3rem;}
+.sc06 .container .latest a {display:block;width:35rem;line-height:2;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+
+.sc06 .container .right .case {padding-bottom:56%;position:relative;}
+.sc06 .container .right iframe {position:absolute;top:0;left:0;width:100%;height:100%;}
+
+
+#ft {padding:5rem 0;background:#222;color:#929292;font-size:1.4rem;font-weight:300;line-height:1.8;}
+#ft .container {display:flex;width:130rem;margin:0 auto;padding:0 1rem;}
+#ft .container strong {color:#fff;font-weight:700;}
+#ft .container .left {flex:7;}
+#ft .container .right {flex:3;text-align:right;}
+#ft .container .right .sns {margin-bottom:4rem;}
+#ft .container .right i {font-size:2.1rem;color:#fff;padding:0.75rem;background:#444;border-radius:50%;margin-left:1rem;}
+
+#ft .container .right .customer {font-size:1.5rem;color:#f2f2f2;}
+
+#ft .container .right .customer a {display:inline-block;}
+#ft .container .right .customer a~a::before {content:"";display:inline-block;width:0.1rem;height:1.2rem;background:var(--dd);margin:0 1rem;}
+#ft address {font-size:1.2rem;margin-top:3rem;}
+
+
+
+
+
+
+
+
 
 
 
