@@ -1,0 +1,47 @@
+:root {
+    --mc:#0F97DD;
+    --lc:#ffffff;
+    --dc:#444444;
+}
+
+html {font-size:20px;}
+body {font-size:0.8rem;}
+
+#header {display:flex;position:fixed;top:0;left:0;width:100%;padding:0 3rem;line-height:5rem;color:var(--lc);font-size:1rem;transition:0.5s;z-index:999;}
+#header h1 a {display:block;font-size:0;height:5rem;width:20rem;background:url(../img/logo.png) no-repeat left center;}
+#header .gnb {margin-left:auto;}
+#header .search {margin-left:10rem;}
+#header .gnb>ul {display:flex;gap:2rem;}
+#header .gnb>ul>li>a {display:block;}
+
+#header.on {color:var(--dc);background:var(--lc);}
+#header.on h1 a {background:url(../img/logo_on.png) no-repeat left center;}
+
+#mainVisual {background:#000;}
+#mainVisual .main_slider figure {height:45rem;background-position:center center;background-size:110% 110%;background-repeat:no-repeat;position:relative;}
+#mainVisual .main_slider figure.on {background-size:100% 100%;transition:1.5s;}
+#mainVisual .main_slider .itm01 {background-image: url(../img/img_visual1.jpg);}
+#mainVisual .main_slider .itm02 {background-image: url(../img/img_visual2.jpg);}
+#mainVisual .main_slider .itm03 {background-image: url(../img/img_visual3.jpg);}
+
+#mainVisual figure .slogan {position:absolute;top:23rem;left:50%;transform:translateX(-50%);width:70rem;color:var(--lc)}
+#mainVisual figure .slogan h3 {font-size:4rem;font-weight:900;margin-bottom:1rem;opacity:0;transform:translateY(5rem);}
+#mainVisual figure .slogan p {font-size:1rem;font-weight:300;margin-bottom:2rem;opacity:0;transform:translateY(5rem);}
+#mainVisual figure .slogan a {display:block;width:7.5rem;line-height:2rem;color:var(--lc);text-align:center;border-radius:1rem;opacity:0;transform:translateY(5rem);border:1px solid var(--lc);}
+
+#mainVisual figure.on .slogan h3 {opacity:1;transform:translateY(0);transition:0.5s;}
+#mainVisual figure.on .slogan p {opacity:1;transform:translateY(0);transition:0.5s 0.5s;}
+#mainVisual figure.on .slogan a {opacity:1;transform:translateY(0);transition:0.5s 1s;}
+
+#mainVisual figure .slogan a:hover {background:var(--mc);border:1px solid transparent;transition:0.1s;}
+
+#mainVisual .slick-dots {position:absolute;bottom:6rem;left:50%;transform:translateX(-50%);width:70rem;}
+#mainVisual .slick-dots li {display:inline-block;position:relative;width:5rem;height:0.2rem;background:var(--lc);border-radius:0.1rem;margin-right:0.2rem;overflow:hidden;}
+
+#mainVisual .slick-dots li:after {content:"";display:block;position:absolute;top:0;left:0;width:0;height:100%;background:var(--mc)}
+#mainVisual .slick-dots li.slick-active:after {width:100%;transition:3s;}
+
+#mainVisual .slick-dots button {display:none;}
+
+
+
