@@ -60,6 +60,7 @@ const productSlier = new Swiper('.pr_slider', {
 
     pagination: {
         el: '.pr_btn .page',
+        clickable: true,
         //type: "fraction",
     },
     navigation: {
@@ -75,6 +76,7 @@ const productSlier02 = new Swiper('.pr2_slider', {
     spaceBetween: 120,
     pagination: {
         el: '.pr_btn .page',
+        
         //type: "fraction",
     },
     navigation: {

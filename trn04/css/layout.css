@@ -2,6 +2,7 @@
     --mc:#0F97DD;
     --lc:#ffffff;
     --dc:#444444;
+    --dd:#dddddd;
 }
 
 html {font-size:20px;}
@@ -17,7 +18,7 @@ body {font-size:0.8rem;}
 #header.on {color:var(--dc);background:var(--lc);}
 #header.on h1 a {background:url(../img/logo_on.png) no-repeat left center;}
 
-#mainVisual {background:#000;}
+#mainVisual {background:#000;position:relative;}
 #mainVisual .main_slider figure {height:45rem;background-position:center center;background-size:110% 110%;background-repeat:no-repeat;position:relative;}
 #mainVisual .main_slider figure.on {background-size:100% 100%;transition:1.5s;}
 #mainVisual .main_slider .itm01 {background-image: url(../img/img_visual1.jpg);}
@@ -42,6 +43,42 @@ body {font-size:0.8rem;}
 #mainVisual .slick-dots li.slick-active:after {width:100%;transition:3s;}
 
 #mainVisual .slick-dots button {display:none;}
+
+#mainVisual .search_box {display:flex;position:absolute;bottom:-5rem;left:50%;transform:translateX(-50%);width:70rem;height:10rem;border-radius:1rem;overflow:hidden;box-shadow:0.2rem 0.2rem 5rem var(--dd)}
+#mainVisual .search_box>div {flex:1;padding:2.5rem 3rem;}
+#mainVisual .search_box .left {background:var(--lc);}
+#mainVisual .search_box .right {background:var(--mc);color:var(--lc)}
+
+#mainVisual .search_box .case {display:flex;align-items:center;}
+#mainVisual .search_box .case>a {display:block;width:5rem;height:5rem;background:var(--dd) url(../img/icon.png) -10rem 0rem;margin-right:2rem;text-indent:-9999rem;border-radius:50%;transition:0.5s;}
+
+#mainVisual .search_box .case>a:hover {background:var(--lc) url(../img/icon.png) -10rem -20rem;}
+
+#mainVisual .search_box .txt h3 {font-size:1.75rem;font-weight:700;margin-bottom:0.5rem;}
+#mainVisual .search_box .txt p {font-size:0.75rem;font-weight:300;margin-bottom:0.5rem;}
+#mainVisual .search_box .txt i {padding:0.25rem;background:var(--mc);color:var(--lc);margin-left:1rem;border-radius:50%;transition:0.5s}
+#mainVisual .search_box .txt a:hover i {transform:rotate(360deg);}
+
+#mainVisual .search_box .right h3 {font-size:1rem;margin-bottom:1rem;}
+#mainVisual .search_box .right form {display:flex;justify-content:space-between;border:0.05rem solid var(--lc);padding:0.5rem 1rem;border-radius:0.5rem;}
+#mainVisual .search_box .right form input[type="search"] {border:none;outline:none;background:transparent;width:20rem;}
+#mainVisual .search_box .right form input[type="search"]::placeholder {color:var(--lc);}
+#mainVisual .search_box .right form input[type="search"]:focus::placeholder {color:transparent;}
+#mainVisual .search_box .right form input[type="search"]:focus {color:var(--lc);font-size:1rem}
+#mainVisual .search_box .right form button {font-size:1.5rem;}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
