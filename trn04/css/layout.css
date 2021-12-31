@@ -112,7 +112,6 @@ body {font-size:0.8rem;}
 #Product h2:after {content:"";display:block;width:5rem;height:0.2rem;background:var(--mc);margin:0.5rem auto 1rem auto;}
 #Product p {font-size:0.75rem;font-weight:300;margin-bottom:2rem;}
 
-#Product .container {}
 #Product .container figure {position:relative;width:27.5rem;height:17.5rem;margin:0 0.5rem;}
 #Product .container figure .case {position:absolute;top:50%;left:0;width:100%;height:10rem;transform:translateY(-50%);border:4px solid transparent;transition:0.5s;}
 
