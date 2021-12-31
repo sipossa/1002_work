@@ -154,7 +154,7 @@ body {font-size:0.8rem;}
 #Service .container figure .icon04 strong{background:url(../img/icon.png) -15rem 0;}
 
 #Service .container figure~figure:after {content:"";display:block;width:0.05rem;height:2rem;background:var(--dd);position:absolute;top:2rem;left:0;}
-
+#Service .container .icon01{}
 
 
 
