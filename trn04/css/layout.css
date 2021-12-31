@@ -173,7 +173,6 @@ body {font-size:0.8rem;}
 #Service .container figure .icon04 strong{background:url(../img/icon.png) -15rem 0;}
 
 #Service .container figure~figure:after {content:"";display:block;width:0.05rem;height:2rem;background:var(--dd);position:absolute;top:2rem;left:0;}
-<<<<<<< HEAD
 
 #footer {background:#f3f3f3;}
 #footer .top {position:relative;display:flex;justify-content:space-between;width:60rem;margin:0 auto;padding:1rem 0;}
@@ -200,19 +199,12 @@ body {font-size:0.8rem;}
 #popUp {position:fixed;top:10rem;left:10rem;border:0.2rem solid var(--mc);background:var(--lc);text-align:center;padding:3rem 1.5rem;line-height:1.45;cursor:pointer;}
 #popUp p {margin-bottom:2rem;}
 #popUp a {display:block;width:7.5rem;background:var(--mc);color:var(--lc);margin:0 auto;line-height:2;}
-=======
-#Service .container .icon01{}
 
 
 
 
 
 
-
-
-
-
->>>>>>> f846f719a70ae7a50da25ed3402009db23a8bee9
 
 
 
