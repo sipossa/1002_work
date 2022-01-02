@@ -11,15 +11,6 @@ $('.search').on('click', function(){
     $('.searchForm').stop().slideToggle();
 })
 
-$(window).on('scroll', ()=>{
-    let sct=$(window).scrollTop();
-    console.log(sTop,sct);
-    sct > 0 ? $('#header').addClass('on') : $('#header').removeClass('on');
-    //if(sct > 0) {$('#header').addClass('on')}else{$('#header').removeClass('on')}
-    sct > 300 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
-    sct > sTop ? $('#Solution').addClass('on') : $('#Solution').removeClass('on');
-});
-
 
 $('.main_slider').slick({
     autoplay:true,
@@ -64,7 +55,7 @@ $('.familyLink .link>a').on('click', function(){
     return false;
 });
 
-// $(document).not('.familyLink .link>a').on('click', function(){
+// $('body').not('.familyLink .link>a').on('click', function(){
 //     $('.familyLink .link>a').prev().stop().slideUp();
 // });
 
@@ -74,6 +65,14 @@ $('#toTop a').on('click', e=> {
 });
 
 let sTop = $('#Solution').offset().top - 200;
+$(window).on('scroll', ()=>{
+    let sct=$(window).scrollTop();
+    console.log(sTop,sct);
+    sct > 0 ? $('#header').addClass('on') : $('#header').removeClass('on');
+    //if(sct > 0) {$('#header').addClass('on')}else{$('#header').removeClass('on')}
+    sct > 300 ? $('#toTop').fadeIn() : $('#toTop').fadeOut();
+    sct > sTop ? $('#Solution').addClass('on') : $('#Solution').removeClass('on');
+});
 
 //console.log(sTop)
 
