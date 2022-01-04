@@ -4,34 +4,81 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>레이아웃001</title>
-    <link rel="stylesheet" href="./css/reset.css">
-    <link rel="stylesheet" href="./css/slick.css">
-    <link rel="stylesheet" href="./css/fullpage.css">
-    <link rel="stylesheet" href="./css/main.css">
-    <script src="./js/jquery-1.12.4.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/fullpage.min.js"></script>
-    <script src="./js/main.js"></script>
+
+    <meta name="description" content="2022년 이창훈 portfolio">
+
+
+    <title>2022년 이창훈 portfolio</title>
+    <link rel="stylesheet" href="./lib/css/common.css">
+    <link rel="stylesheet" href="./lib/css/slick.css">
+    <link rel="stylesheet" href="./lib/css/fullpage.css">
+    <link rel="stylesheet" href="./portfolo.css">
+    <script src="./lib/js/jquery-1.12.4.min.js"></script>
+    <script src="./lib/js/slick.min.js"></script>
+    <script src="./lib/js/fullpage.min.js"></script>
+    <script src="./lib/js/typed_cdn.js"></script>
+    <script src="./lib/js/circle-progress.min.js"></script>
+    <script src="./portfolio.js"></script>
+    
 </head>
 <body>
+<div id="Wrap">
     <header id="header">
-        <h1>lee's portfolio 2022</h1>
-    </header>
-    <main id="forU">
-        <div class="section sc01">
-            <div class="container">
-                <h2>lee's portfolio</h2>
-                <figure>
-                    <img src="./img/pro01.jpg" alt="me">
-                </figure>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Enim illum aliquam quos a iusto totam omnis ipsum atque.</p>
-            </div>
+        <h1>
+            <a href="#intro">2022 lee's portfolio</a>
+        </h1>
+        <nav>
+            <ul>
+                <li><a href="#intro">intro</a></li>
+                <li><a href="#portfolio_01">portfolio_01</a></li>
+                <li><a href="#portfolio_02">portfolio_02</a></li>
+                <li><a href="#portfolio_03">portfolio_03</a></li>
+                <li><a href="#portfolio_04">portfolio_04</a></li>
+                <li><a href="#portfolio_05">portfolio_05</a></li>
+                <li><a href="#profile">profile</a></li>
+            </ul>
+        </nav>
+        <div class="cover_btn">
+            <i class="xi-bars"></i>
         </div>
-        <div class="section sc02">02</div>
-        <div class="section sc03">03</div>
-        <div class="section sc04">04</div>
-        <div class="section sc05">05</div>
+    </header>
+    <main id="main">
+    <section class="section intro">
+        <div class="container">
+            <div class="slogan">
+                <h2><span class="slogan_txt"></span></h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.<br> Esse itaque culpa optio voluptates fuga ipsam pariatur quaerat? Nemo?</p>
+                <strong>2022 leechanghun portfolio</strong>
+            </div>
+            <figure>
+                <img src="./lib/base/po_intro.jpg" alt="2022 leechanghun portfolio">
+            </figure>
+        </div>
+    </section>
+    <section class="section portfolio_01">01</section>
+    <section class="section portfolio_02">02</section>
+    <section class="section portfolio_03">03</section>
+    <section class="section portfolio_04">04</section>
+    <section class="section portfolio_05">05</section>
+    <section class="section profile">Profile</section>
     </main>
+    <footer id="footer">
+        <div class="toTop">
+            <a href="#intro"><i class="xi-arrow-top"></i></a>
+        </div>
+        <address>
+            &copy; 2020 lee.
+        </address>
+    </footer>
+</div>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
