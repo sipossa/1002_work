@@ -14,6 +14,27 @@ body {font-size:0.8rem;color:var(--dc);}
 #Wrap {min-width:95rem;}
 
 #header h1 {position:fixed;top:3rem;left:3rem;z-index:999;}
+#header h1 a {display:block;width:15rem;}
+
+.st0 {fill: #EF4141; animation:pathChange 2s infinite;}
+.txt1 {fill:#F8F4F5;font-family: 'Montserrat', sans-serif;font-size:2.5rem;}
+.txt2 {fill:#333333;font-family: 'Montserrat', sans-serif;font-size:2.5rem;}
+
+@keyframes colorChange {
+    0% {fill: #EF4141;}
+    50% {fill: #336699;}
+    100% {fill: #EF4141;}
+}
+
+@keyframes pathChange {
+    0% {d:path("M492.6,150.8c11.7,78.7-109.5,138.9-243.9,144C114,300-6.4,229.6,4.7,150.8C15.7,73,114.1,13.7,248.6,6.8 C382.3,0,480.8,71.5,492.6,150.8z")}
+    25% {d:path("M273.6,143.5C195,131.2,384.4,275,250,280.1c-134.6,5.1-226.2-49.7-226.9-129.3c-0.7-83,81.5-113.5,221.1-115.4 C376.5,33.7,419.8,166.3,273.6,143.5z")}
+    50% {d:path("M273.6,143.5c11.7,78.7,109.5,146.2-25,151.3C114,300-6.4,229.6,4.7,150.8C15.7,73,114.1,13.7,248.6,6.8 C382.3,0,261.9,64.1,273.6,143.5z")}
+    75% {d:path("M273.6,143.5c-78.6-12.2,20.9,164.9-92.6,92.6c-117.4-74.9,42.6,1.4,41.9-78.1c-0.7-83-124.2-71.1,21.3-122.5 C368.9-8.6,419.8,166.3,273.6,143.5z")}
+    100% {d:path("M492.6,150.8c11.7,78.7-109.5,138.9-243.9,144C114,300-6.4,229.6,4.7,150.8C15.7,73,114.1,13.7,248.6,6.8 C382.3,0,480.8,71.5,492.6,150.8z")}
+}
+
+
 #header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
 #header .cover_btn {position:fixed;top:3rem;right:3rem;z-index:999;}
 #header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
@@ -22,6 +43,26 @@ body {font-size:0.8rem;color:var(--dc);}
 #header nav li a:after {content:"";position:absolute;top:0.35rem;right:0;display:block;width:40%;height:0.3rem;background:var(--dc);border-radius:0.15rem;transition:0.3s;}
 #header nav li.on a:after {width:70%;}
 
+.gooey {filter:url('#bbq');position:relative;height:4rem;}
+.gooey span {position:absolute;top:0;left:0;display:block;width:2.5rem;height:2.5rem;background:var(--sc);border-radius:0.5rem;text-align:center;line-height:2.5rem;color:var(--lc)}
+.gooey span:nth-child(2) {animation:txtAni 3s infinite;}
+
+
+@keyframes txtAni {
+    0% {left:0}
+    50% {left:7rem}
+    100% {left:0}
+}
+
+.box_mask {width:20rem;}
+.st7 {animation:maskAni 2s infinite;}
+
+@keyframes maskAni {
+    0% {d:path("M310.3,385.2H84.8c-36,0-65.4-29.4-65.4-65.4V94.3c0-36,29.4-65.4,65.4-65.4h225.6c36,0,65.4,29.4,65.4,65.4 v225.6C375.7,355.8,346.3,385.2,310.3,385.2z")}
+    50% {d:path("M310.3,385.2H84.8c-36,0-65.4-29.4-65.4-65.4V94.3c0-36,52.2,2.2,65.4-65.4h225.6c36,0,65.4,29.4,65.4,65.4 v207.2C375.7,337.5,311,303,310.3,385.2z")}
+    100% {d:path("M310.3,385.2H84.8c-36,0-65.4-29.4-65.4-65.4V94.3c0-36,29.4-65.4,65.4-65.4h225.6c36,0,65.4,29.4,65.4,65.4 v225.6C375.7,355.8,346.3,385.2,310.3,385.2z")}
+    
+}
 
 
 .section {background:url(./lib/base/bg_patten02.png)}
