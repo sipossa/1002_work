@@ -13,13 +13,13 @@
     <link rel="stylesheet" href="./lib/css/common.css">
     <link rel="stylesheet" href="./lib/css/slick.css">
     <link rel="stylesheet" href="./lib/css/fullpage.css">
-    <link rel="stylesheet" href="./portfolo.css">
+    <link rel="stylesheet" href="./portfolo_svg.css">
     <script src="./lib/js/jquery-1.12.4.min.js"></script>
     <script src="./lib/js/slick.min.js"></script>
     <script src="./lib/js/fullpage.min.js"></script>
     <script src="./lib/js/typed_cdn.js"></script>
     <script src="./lib/js/circle-progress.min.js"></script>
-    <script src="./portfolio.js"></script>
+    <script src="./portfolio_svg.js"></script>
 </head>
 
 <body>
@@ -27,7 +27,15 @@
         <header id="header">
             <h1>
                 <a href="#intro">
-                    2022 lee's portfolio 
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 500 300"
+                        style="enable-background:new 0 0 500 300;" xml:space="preserve">
+                        <path class="st0" />
+                        <text transform="matrix(1 0 0 1 51.7363 145.7207)">
+                            <tspan x="0" y="0" class="txt1">2022</tspan>
+                            <tspan x="131.4" y="0" class="txt2">lee's portfolio</tspan>
+                        </text>
+                    </svg>
                 </a>
             </h1>
             <nav>
@@ -63,6 +71,7 @@
                 </a>
             </section>
             <section class="section portfolio_01">
+
                 <div class="container">
                     <div class="itm mockup">
                         <figure>
@@ -70,6 +79,7 @@
                         </figure>
                     </div>
                     <div class="description">
+                        <div class="gooey"><span>0</span><span>1</span></div>
                         <h3>My portfolio 01 - artbox</h3>
                         <p>Lorem ipsum dolor sit amet consectetur<br>
                             adipisicing elit. Sed, cum. Accusamus nulla repellat quibusdam <br>
@@ -99,40 +109,41 @@
                 </div>
             </section>
             <section class="section portfolio_02">
-                <div class="container">
-
-                    <div class="description">
-                        <h3>My portfolio 02 - hakgyo</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur<br>
-                            adipisicing elit. Sed, cum. Accusamus nulla repellat quibusdam <br>
-                            temporibus sequi ea voluptatem?
-                        </p>
-                        <dl>
-                            <dt>font</dt>
-                            <dd>"Noto Sans Korean" , "Montserrat"</dd>
-                        </dl>
-                        <dl>
-                            <dt>color</dt>
-                            <dd>
-                                <span></span> <strong>#333333</strong>
-                                <span></span> <strong>#666666</strong>
-                                <span></span> <strong>#999999</strong>
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>process</dt>
-                            <dd>jquery , slick slide , YTPayer , typed</dd>
-                        </dl>
-                        <ul>
-                            <li><a href="https://sipossa.github.io/003/ptf01/" target="_blank">Link github</a></li>
-                            <li><a href="#!">style guide</a></li>
-                        </ul>
-                    </div>
-                    <div class="itm mockup">
-                        <figure>
-                            <img src="./lib/base/portfolio01.jpg" alt="lee portfolio 01 artbox">
-                        </figure>
-                    </div>
+                <div class="box_mask">
+                    <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400"
+                        style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                        <style type="text/css">
+                            .st7 {
+                                fill: #ffffff;
+                            }
+                        </style>
+                        <defs>
+                            <mask id="photo-mask">
+                                <path class="st7" d="M310.3,385.2H84.8c-36,0-65.4-29.4-65.4-65.4V94.3c0-36,29.4-65.4,65.4-65.4h225.6c36,0,65.4,29.4,65.4,65.4
+	v225.6C375.7,355.8,346.3,385.2,310.3,385.2z" />
+                            </mask>
+                        </defs>
+                        <image mask="url(#photo-mask)" xlink:href="./lib/base/pro03.jpg" />
+                    </svg>
+                </div>
+                <div class="box_mask2">
+                    <svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 400 400"
+                        style="enable-background:new 0 0 400 400;" xml:space="preserve">
+                        <style type="text/css">
+                            .st8 {
+                                fill: #ffffff;
+                            }
+                        </style>
+                        <defs>
+                            <mask id="photo-mask2">
+                                <path class="st8" d="M310.3,385.2H84.8c-36,0-65.4-29.4-65.4-65.4V94.3c0-36,29.4-65.4,65.4-65.4h225.6c36,0,65.4,29.4,65.4,65.4
+	v225.6C375.7,355.8,346.3,385.2,310.3,385.2z" />
+                            </mask>
+                        </defs>
+                        <image mask="url(#photo-mask2)" xlink:href="./lib/base/pro03.jpg" />
+                    </svg>
                 </div>
             </section>
             <section class="section portfolio_03">03</section>
