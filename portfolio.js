@@ -19,6 +19,22 @@ new Typed('.slogan_txt',{
     typeSpeed:100,
 });
 
+$('.cover_btn').on('click', function(){
+    $("#cover").slideToggle(); //fadeToggle
+});
+
+
+let cloneMenu = $('nav>ul').clone();
+$('#cover').append(cloneMenu);
+
+$('#cover a').on('click', function(){
+    $('#cover').slideUp(); 
+});
+
+$('#cover').on('scroll wheel touchmove', function(){
+    return false;
+});
+
 
 //-----------------------------------------------------
 })

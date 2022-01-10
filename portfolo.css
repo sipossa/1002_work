@@ -19,7 +19,7 @@ body {font-size:0.8rem;color:var(--dc);}
 
 
 #header nav {position:fixed;top:50%;right:3rem;transform:translateY(-50%);z-index:999;}
-#header .cover_btn {position:fixed;top:3rem;right:3rem;z-index:999;}
+#header .cover_btn {position:fixed;top:3rem;right:3rem;cursor:pointer;z-index:999;}
 #header .cover_btn i {font-size:1.5rem;padding:.5rem;background:var(--lc)}
 
 #header nav li a {position:relative;display:block;width:3rem;height:1rem;text-indent:-99999px;}
@@ -30,7 +30,7 @@ body {font-size:0.8rem;color:var(--dc);}
 .section {background:url(./lib/base/bg_patten02.png)}
 .section img {max-width:100%;}
 .section .mockup {background:url(./lib/base/mockup.png) no-repeat center top/100%;padding:7.5% 10% 8% 10%;}
-.container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;align-items:center;width:70rem;margin:0 auto;}
+.container {position:relative;display:grid;grid-template-columns:repeat(2,1fr);gap:2rem;align-items:center;width:70rem;margin:0 auto;z-index:888;}
 .section .mockup figure {position:relative;padding-bottom:56.25%;overflow:hidden;}
 .section .mockup figure img {position:absolute;top:0;left:0;width:100%;transition:1s;cursor: pointer;}
 .section .mockup figure:hover img {transform:translateY(-100%);top:100%;}
@@ -65,8 +65,8 @@ body {font-size:0.8rem;color:var(--dc);}
 .intro .slogan p {font-size:0.75rem;font-weight:300;margin-bottom:1rem;}
 .intro .slogan strong {display:block;font-size:1rem;font-weight:500;}
 
-.intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid #444;font-size:0;border-radius:0.7rem;opacity:0.5;}
-.intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:#444;border-radius:0.1rem;animation:wheel 0.5s infinite}
+.intro .wheel {position:absolute;bottom:3rem;left:50%;transform:translateX(-50%);width:1.5rem;height:2.5rem;border:2px solid var(--dc);font-size:0;border-radius:0.7rem;opacity:0.5;}
+.intro .wheel span {position:absolute;top:0.3rem;left:50%;transform:translateX(-50%);width:0.2rem;height:0.5rem;background:var(--dc);border-radius:0.1rem;animation:wheel 0.5s infinite}
 
 @keyframes wheel {
     to {top:0.6rem}
@@ -80,6 +80,65 @@ body {font-size:0.8rem;color:var(--dc);}
 .portfolio_02 .description dd span:nth-of-type(2) {background:#ffff00;}
 .portfolio_02 .description dd span:nth-of-type(3) {background:#336699;}
 
+.portfolio_04 {overflow:hidden;}
+.portfolio_04 .gooyee {position:absolute;top:10%;left:0;width:100%;height:100vh;font-size:0;}
+.portfolio_04 .gooyee {overflow:hidden;filter:url('#bbq')}
+.portfolio_04 .gooyee:before {content:"";display:block;width:40rem;height:40rem;background:var(--sc);border-radius:50%;position:absolute;top:20%;left:0;}
+.portfolio_04 .gooyee:after {content:"";display:block;width:10rem;height:10rem;background:var(--sc);border-radius:50%;position:absolute;top:50%;left:25%;animation:circle_move 9s infinite;}
+
+
+@keyframes circle_move {
+    0% {top:50%;left:25%;opacity:1;}
+    100% {top:0;left:70%;opacity:0;}
+}
+
+
+
+.profile .inner {position:relative;width:20rem;height:20rem;padding:1rem;border:1px solid rgba(0,0,0,0.15);border-radius:50%;}
+.profile .inner strong {display:block;width:18rem;height:18rem;border-radius:50%;overflow:hidden;}
+.profile .inner span {position:absolute;top:0;left:calc(50% - 0.5rem);width:1rem;height:10rem;font-size:0;animation:circle_thoto 6s infinite linear;transform-origin:bottom;}
+.profile .inner span:after {content:"";display:block;width:1rem;height:1rem;background:var(--mc);border-radius:50%;margin-top:-0.5rem;}
+
+
+@keyframes circle_thoto {
+    0% {transform:rotate(0);}
+    100% {transform:rotate(1turn);}
+}
+
+#cover {display:none;position:fixed;top:0;left:0;background:rgba(0,0,0,0.75);width:100%;height:100vh;z-index:998;}
+#cover ul {position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);color:var(--dc);font-size:1rem;font-weight:300;line-height:1.5;text-align:center;background:var(--lc);padding:5rem;border-radius:50%;}
+
+
+.spec {font-size:1.25rem;}
+.spec i {padding:0.5rem;background:var(--dc);color:var(--lc);margin:0 0.25rem;border-radius:50%;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* 
 물결하고 사선 백그라운드 만들기 on 붙이기 
 1. 패스 애니메이션
@@ -90,6 +149,8 @@ body {font-size:0.8rem;color:var(--dc);}
 스토리보드
 스타일가이드
 와이어프레임
+
+svg 배경으로 써서 사선 레이아웃
 
 최종보고 : 포토폴리오 파일로 정리
 */
